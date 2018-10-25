@@ -36,7 +36,7 @@ Desde 2015 a Agência Nacional de Telecomunicações promove a aferição do Gra
 
 A pesquisa mede diversos aspectos e serviços de telefonia, no entanto nesse estudo foi selecionada apenas a nota para o quesito funcionamento do serviço de celular. Na pesquisa as notas foram divididas entre linhas pré e pós pagas. Para o estudo foi considerado o serviço como um todo, sendo a nota utilizada a média obtidas nas duas modalidades.
 
-## Contexto(continuação)
+## 
 
 Além dessa pesquisa, a Anatel coleta mensalmente diversos dados que são disponibilizados em sua página na Internet. Para o estudo foram selecionados os dados de Acessos do SMP dos últimos 3 anos, que significa a quantidade de usuários do serviço e os dados de infraestrutura, onde estão disponíveis diversas informações técnicas sobre as ERBS-estação rádio Base e as antenas que nela são instaladas por cada entidade outorgada. 
 
@@ -44,22 +44,27 @@ Nesse trabalho foram selecionado para estudo apenas os dados das 4 maiores opera
 
 ## Método
 
-Primeiramente foram obtidos os dados de Infraestrutura ([Portal Anate - Infraestrutura - Telefonia Móvel)  ](https://sistemas.anatel.gov.br/se/public/view/b/licenciamento.php). Foi necessário realizar 27 extrações de tabelas CSV contendo os dados técnicos da infraestrutura das operadoras, uma para a cada Estado da Federação. Nessas tabelas CSV, nomeadas respecticvamente de UF-csv_licenciamento, cada linha do arquivo corresponde a uma antena, desse modo para saber a quantidade de antenas disponíveis por Operadora em cada Estado foi contada a quantidade de linhas filtradas por operadora. Ao final foram gerados 27 data.frame, que foram unidos por meio da função full_join e deu origem ao Data.Frame "Antenas", contendo a UF, a Operadora e a suas respectivas quantidade de antenas. 
+Primeiramente foram obtidos os dados de Infraestrutura ([Portal Anate - Infraestrutura - Telefonia Móvel)  ](https://sistemas.anatel.gov.br/se/public/view/b/licenciamento.php). 
 
-## Método (continuação)
+Foi necessário realizar 27 extrações de tabelas CSV contendo os dados técnicos da infraestrutura das operadoras, uma para a cada Estado da Federação. Nessas tabelas CSV, nomeadas respecticvamente de UF-csv_licenciamento, cada linha do arquivo corresponde a uma antena, desse modo para saber a quantidade de antenas disponíveis por Operadora em cada Estado foi contada a quantidade de linhas filtradas por operadora. 
+
+Ao final foram gerados 27 data.frame, que foram unidos por meio da função full_join e deu origem ao Data.Frame "Antenas", contendo a UF, a Operadora e a suas respectivas quantidade de antenas. 
+
+## 
 
 Em seguida foi trabalhado os dados de acessos, obtidos em ([Portal Anatel - TELEFONIA MÓVEL - ACESSOS) ](https://cloud.anatel.gov.br/index.php/s/TpaFAwSw7RPfBa8?path=%2FMovel_Pessoal). 
+
 O CSV Acessos_SMP_2015-2018_-_Total possui a informação da quantidade de linhas dos 3 últimos anos, por Estado e por empresa, além de dados das tecnologias e velocidades da internet móvel.  
+
 No estudo os dados foram filtrados e sumarizados para gerar o Data.Frame "Acessos", contendo a UF, a Operadora e a quantidade de acessos do último mês disponível, no caso agosto de 2018.
 
-## Método (continuação)
+## 
 Por conseguinte, os Data.Frame Antenas e Acessos foram unidos e deram origem ao Data.Frame SMP, contendo os dados de UF, Operadora, Quantidade de Acessos e a Quantidade de antenas.
 
 Em adição, foi gerado manualmente o vetor Notas, com as notas extraídas do último relatório da pesquisa de satisfação.([Portal Anatel-Satisfação e Qualidade Percebida - 2017)](http://www.anatel.gov.br/consumidor/pesquisa-de-satisfacao-e-qualidade/2017). Esses dados estão disponíveis apenas em forma de relatório no Portal da Agência , assim não foi possível sua inserção por meio importação do Dataset. Esse vetor foi inserido ao Data.Frame SMP.
 
+##
 Para a apresentação gráfica o número de antenas foi comparado previamente ao número de clientes de cada operadora por estado da Federação. Assim, foi obtido a quantidade média de usuários por antena.
-
-## Método (continuação)
 
 No segundo segmento foi criado o Data.Frame SMP_POP, que foi originado a partir do Data.Frame SMP sumarizado por UF. Nele foi acrescentado manualmente um vetor com a População dos Estados brasileiros retirados do último senso do IBGE ao Data.Frame SMP. Em seguida foi acrescida uma coluna com a proporção de linhas de celular por habitantes.
 
@@ -567,7 +572,7 @@ Regiao <- Norte %>%
 
 ```
 
-## Gráficos1 
+## Gráfico 1 
 ```{r pressure1}
 #Gráfico 1: Mapa de notas das Operadoras por Estado
 
@@ -577,7 +582,7 @@ SMP%>%
 
 ```
 
-## Gráficos2 
+## Gráfico 2 
 ```{r pressure2}
 #Gráfico 2: Nota média obtida pelas Operadoras por Estado
 SMP %>% 
@@ -588,7 +593,7 @@ SMP %>%
   labs(title = "Nota média de todas as operadoras por Estado ", x ="UF", y ="Nota Média")  
 ```
 
-## Gráficos3 
+## Gráfico 3 
 ```{r pressure3}
 #Gráfico 3: Dispersão da relação entre a variável Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade. 
 
@@ -598,7 +603,7 @@ SMP %>%
  
 ``` 
 
-## Gráficos4
+## Gráfico 4
 ```{r pressure4} 
 
         SMP%>% 
@@ -607,7 +612,7 @@ SMP %>%
         
 ```  
 
-## Gráficos5
+## Gráfico 5
 ```{r pressure5} 
 
 
@@ -620,24 +625,30 @@ SMP %>%
 
 ## Conclusão
 
-1. Gráfico 1: Mapa de notas das Operadoras por Estado - A primeira análise buscou visualizar como as notas de cada Operadora estavam distribuídas nos Estados. Pelo mapa das cores é possível perceber que a OI mostra um número mais acentuado de avaliações baixas. Enquanto a Vivo aparenta ser a melhor avaliada no quesito funcionamento do serviço de celular.
+* Gráfico 1: Mapa de notas das Operadoras por Estado - A primeira análise buscou visualizar como as notas de cada Operadora estavam distribuídas nos Estados. Pelo mapa das cores é possível perceber que a OI mostra um número mais acentuado de avaliações baixas. Enquanto a Vivo aparenta ser a melhor avaliada no quesito funcionamento do serviço de celular.
 
-2. Nota média obtida pelas Operadoras por Estado- Na segunda análise foi feita um extração da média das notas de todas as Operadoras por Estado. Por conseguinte, o Estado de Minas Gerais apresentou as menores médias de notas, o que denota que a percepção dos usuários quanto ao funcionamento do serviço de celular não está boa, comparada aos demais Estados da Federação. Em contrapartida, os usuários do Espirito Santos demostraram estar satisfeitos com o Funcionamento do SMP no Estado, uma vez que foi o Estado onde as Operadoras tiveram a maior média geral na avaliação.
+##
+* Nota média obtida pelas Operadoras por Estado- Na segunda análise foi feita um extração da média das notas de todas as Operadoras por Estado. Por conseguinte, o Estado de Minas Gerais apresentou as menores médias de notas, o que denota que a percepção dos usuários quanto ao funcionamento do serviço de celular não está boa, comparada aos demais Estados da Federação.
 
-## Conclusão(continuação)
-3. Gráfico:Dispersão da relação entre a variável Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade - Nessa análise buscou se estudar se a nota obtida pela operadora tinha relação com a sua infraestrutura. Conforme verifica-se no gráfico 3 a dispersão obtida não permite afirmar haver uma correlação positiva entre essas duas variáveis.
+Em contrapartida, os usuários do Espirito Santos demostraram estar satisfeitos com o Funcionamento do SMP no Estado, uma vez que foi o Estado onde as Operadoras tiveram a maior média geral na avaliação.
 
-4. Gráfico 4: Regressão Linear da relação entre número de antenas por usuários e as Notas - Nesse gráfico foi inserida uma linha de regressão linear para cada Operadora. O resultado visualizado no gráfico mostra uma correlação negativa entre a quantidade média de usuários por antenas e as Notas obtidas.
+## 
+* Gráfico:Dispersão da relação entre a variável Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade - Nessa análise buscou se estudar se a nota obtida pela operadora tinha relação com a sua infraestrutura. Conforme verifica-se no gráfico 3 a dispersão obtida não permite afirmar haver uma correlação positiva entre essas duas variáveis.
+
+* Gráfico 4: Regressão Linear da relação entre número de antenas por usuários e as Notas - Nesse gráfico foi inserida uma linha de regressão linear para cada Operadora. O resultado visualizado no gráfico mostra uma correlação negativa entre a quantidade média de usuários por antenas e as Notas obtidas.
+
+##
 O resultado evidenciou não haver relação positiva direta entre a infraestrutura da operadora e a percepção que seu usuário tem do seu serviço, considerando apenas esse aspecto da quantidade de antenas.
 
-## Conclusão(continuação)
 Ao contrário, o cálculo da correlação mostrou haver uma relação negativa pequena, que denota que as operadoras com mais usuários por antenas obtiveram melhor pontuação.
 
 Isso pode significar que essas operadoras com mais usuários por antenas oferecem um melhor serviço, quando se considera outros aspectos como o preço, atendimento, promoções, etc., e por isso tem mais clientes por antenas e são mais bem avaliadas.
 
-## Conclusão(continuação)
+## 
 
-5. Gráfico 5:Proporção de linhas de celular por habitantes - Na segunda parte do estudo foi analisada a proporção de celular por habitante. Por meio do Gráfico 5 é possivel  observar a correlação quase perfeita entre a População e quantidade de linhas. Quanto à proporção, a que Região que apresenta a maior proporção de celular por habitantes é a Centro-Oeste, mesmo tendo a segunda menor população entre as regiões. Enquanto a região Norte tema menor proporção de linhas por habitantes e a menor população.  
+* Gráfico 5:Proporção de linhas de celular por habitantes - Na segunda parte do estudo foi analisada a proporção de celular por habitante. Por meio do Gráfico 5 é possivel  observar a correlação quase perfeita entre a População e quantidade de linhas. 
+
+Quanto à proporção, a que Região que apresenta a maior proporção de celular por habitantes é a Centro-Oeste, mesmo tendo a segunda menor população entre as regiões. Enquanto a região Norte tema menor proporção de linhas por habitantes e a menor população.  
   
 
 
