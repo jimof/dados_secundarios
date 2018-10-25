@@ -1,5 +1,5 @@
 ---
-title: "BREVE AN¡LISE DOS DADOS DO SERVI«O SMP (TELEFONIA CELULAR)"
+title: "BREVE AN√ÅLISE DOS DADOS DO SERVI√áO SMP (TELEFONIA CELULAR)"
 author: "Jose Ivan Maia"
 date: "24 de outubro de 2018"
 output: ioslides_presentation
@@ -11,59 +11,59 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Objeto
 
-Essa an·lise objetiva estudar os dados do serviÁo SMP, coletados no Portal Anatel, por meio da abordagem dos seguintes tÛpicos:
+Essa an√°lise objetiva estudar os dados do servi√ßo m√≥vel pessoal- SMP, coletados no Portal Anatel, por meio da abordagem dos seguintes t√≥picos:
 
 
-1. An·lise dos dados de avaliaÁ„o da percepÁ„o dos usu·rios em relaÁ„o ao funcionamento do serviÁo SMP; 
+1. An√°lise dos dados de avalia√ß√£o da percep√ß√£o dos usu√°rios em rela√ß√£o ao funcionamento do servi√ßo SMP; 
 
-2. An·lise da correlaÁ„o entre a infraestrutura das operadoras e a nota de percepÁ„o recebida;  
+2. An√°lise da correla√ß√£o entre a infraestrutura das operadoras e a nota de percep√ß√£o recebida;  
 
-3. AvaliaÁ„o da relaÁ„o entre a quantidade de linhas de celular e a populaÁ„o e a sua distribuiÁ„o regional.
+3. An√°lise da quantidade de linhas de celular e a popula√ß√£o e a sua distribui√ß√£o regional.
 
 
 ## Objetivos
 
 
-* Verificar de forma regionalizada quais foram as Operadoras melhores avaliadas no quesito "funcionamento do serviÁo de celular" na Pesquisa de satisfaÁ„o da qualidade percebida, realizada anualmente pela Anatel.
+* Verificar de forma regionalizada quais foram as operadoras melhores avaliadas no quesito "funcionamento do servi√ßo de celular" na Pesquisa de satisfa√ß√£o da qualidade percebida, realizada anualmente pela Anatel.
 
-* Investigar se as notas obtidas na pesquisa tÍm alguma correlaÁ„o com a infraestrutura que as Operadoras tÍm nos respectivos Estados. Dado que em teoria a tendÍncia È que quanto mais antenas disponÌveis uma operadora possui, melhor È o sinal e a experiÍncia do usu·rio no serviÁo. 
+* Investigar se as notas obtidas na pesquisa t√™m alguma correla√ß√£o com a infraestrutura que as operadoras t√™m nos respectivos Estados. Em teoria a tend√™ncia √© que quanto mais antenas dispon√≠veis uma operadora possui, melhor √© o sinal e a experi√™ncia do usu√°rio no servi√ßo. 
 
-* Cruzar os dados da populaÁ„o brasileira com os dados de quantidades de linhas habilitadas e verificar a sua distribuiÁ„o e a proporÁ„o de forma regionalizada.
+* Cruzar os dados da popula√ß√£o brasileira com os dados de quantidades de linhas habilitadas e verificar a sua distribui√ß√£o e a propor√ß√£o de linhas por habitantes de forma regionalizada.
 
 ## Contexto
 
-Em 2015, foi aprovado um regulamento especÌfico para se medir simultaneamente a satisfaÁ„o e a qualidade dos serviÁos de telecomunicaÁıes (ResoluÁ„o n∫ 654/2015 da Anatel, que aprova o Regulamento das CondiÁıes de AferiÁ„o do Grau de SatisfaÁ„o e da Qualidade Percebida junto ao Usu·rios de ServiÁos de TelecomunicaÁıes). Desde ent„o a AgÍncia realiza anualmente a essa pesquisa.
+Desde 2015 a Ag√™ncia Nacional de Telecomunica√ß√µes promove a aferi√ß√£o do Grau de Satisfa√ß√£o e da Qualidade Percebida junto ao Usu√°rios de Servi√ßos de Telecomunica√ß√µes.Isso √© feito por meio de uma pesquisa cujo popula√ß√£o-alvo √© composta por todos os usu√°rios do servi√ßo, com idade m√≠nima de 18 (dezoito anos), na condi√ß√£o de principal usu√°rio, com registro em nome de pessoa f√≠sica (PF) e residentes de todas as Unidades da Federa√ß√£o (UF), as notas variam de 0 "totalmente insatisfeito") a 10 ("totalmente satisfeito").
 
-A populaÁ„o-alvo da pesquisa È composta por todos os usu·rios do serviÁo, com idade mÌnima de 18 (dezoito anos), na condiÁ„o de principal usu·rio, com registro em nome de pessoa fÌsica (PF) e residentes de todas as Unidades da FederaÁ„o (UF), as notas variam de 0 "totalmente insatisfeito") a 10 ("totalmente satisfeito").
+A pesquisa mede diversos aspectos e servi√ßos de telefonia, no entanto nesse estudo foi selecionada apenas a nota para o quesito funcionamento do servi√ßo de celular. Na pesquisa as notas foram divididas entre linhas pr√© e p√≥s pagas. Para o estudo foi considerado o servi√ßo como um todo, sendo a nota utilizada a m√©dia obtidas nas duas modalidades.
 
-## Contexto(continuaÁ„o)
+## Contexto(continua√ß√£o)
 
-A pesquisa mede diversos aspectos e serviÁos de telefonia, no entanto para aplicaÁ„o na an·lise foi selecionada apenas a nota para o quesito funcionamento do serviÁo de celular. Na pesquisa as notas foram divididas entre linhas prÈ e pÛs pagas. Para o estudo foi considerado o serviÁo como um todo, sendo a nota a mÈdia obtidas nas duas modalidades.
+Al√©m dessa pesquisa, a Anatel coleta mensalmente diversos dados que s√£o disponibilizados em sua p√°gina na Internet. Para o estudo foram selecionados os dados de Acessos do SMP dos √∫ltimos 3 anos, que significa a quantidade de usu√°rios do servi√ßo e os dados de infraestrutura, onde est√£o dispon√≠veis diversas informa√ß√µes t√©cnicas sobre as ERBS-esta√ß√£o r√°dio Base e as antenas que nela s√£o instaladas por cada entidade outorgada. 
 
-AlÈm dessa pesquisa, a Anatel coleta mensalmente diversos dados que s„o disponibilizados em sua p·gina na Internet. Para o estudo foram selecionados os dados de Acessos do SMP dos ˙ltimos 3 anos, que significa a quantidade de usu·rios do serviÁo e os dados de infraestrutura, onde est„o disponÌveis diversas informaÁıes tÈcnicas sobre as ERBS-estaÁ„o r·dio Base e as antenas que nela s„o instaladas por cada entidade outorgada. 
+Nesse trabalho foram selecionado para estudo apenas os dados das 4 maiores operadoras do pa√≠s, por possuirem atua√ß√£o em todo territ√≥rio nacional, respectivamente a CLARO, a OI, a TIM e a VIVO.  
 
-## Contexto(continuaÁ„o)
+## M√©todo
 
-Como medida de simplificaÁ„o das comparaÁıes foi selecionado apenas os dados das 4 maiores Operadoras, que tem atuaÁ„o em todo territÛrio nacional, respectivamente a CLARO, a OI, a TIM e a VIVO.  
+Primeiramente foram obtidos os dados de Infraestrutura ([Portal Anate - Infraestrutura - Telefonia M√≥vel)  ](https://sistemas.anatel.gov.br/se/public/view/b/licenciamento.php). Foi necess√°rio realizar 27 extra√ß√µes de tabelas CSV contendo os dados t√©cnicos da infraestrutura das operadoras, uma para a cada Estado da Federa√ß√£o. Nessas tabelas CSV, nomeadas respecticvamente de UF-csv_licenciamento, cada linha do arquivo corresponde a uma antena, desse modo para saber a quantidade de antenas dispon√≠veis por Operadora em cada Estado foi contada a quantidade de linhas filtradas por operadora. Ao final foram gerados 27 data.frame, que foram unidos por meio da fun√ß√£o full_join e deu origem ao Data.Frame "Antenas", contendo a UF, a Operadora e a suas respectivas quantidade de antenas. 
 
-## MÈtodo
+## M√©todo (continua√ß√£o)
 
-Primeiramente foram obtidos os dados de Infraestrutura ([Portal Anatel)  ](https://sistemas.anatel.gov.br/se/public/view/b/licenciamento.php). Foi necess·rio realizar 27 extraÁıes, uma para a cada Estado da FederaÁ„o. Cada linha do arquivo corresponde a uma antena, desse modo para saber a quantidade de antenas disponÌveis por Operadora em cada Estado foi contada a quantidade de linhas filtradas por operadora. Ao final os 27 data.frame foram unidos por meio da funÁ„o full_join e deu origem ao Data.Frame "Antenas", contendo a UF, a Operadora e a suas respectivas quantidade de antenas. 
+Em seguida foi trabalhado os dados de acessos, obtidos em ([Portal Anatel - TELEFONIA M√ìVEL - ACESSOS) ](https://cloud.anatel.gov.br/index.php/s/TpaFAwSw7RPfBa8?path=%2FMovel_Pessoal). 
+O CSV Acessos_SMP_2015-2018_-_Total possui a informa√ß√£o da quantidade de linhas dos 3 √∫ltimos anos, por Estado e por empresa, al√©m de dados das tecnologias e velocidades da internet m√≥vel.  
+No estudo os dados foram filtrados e sumarizados para gerar o Data.Frame "Acessos", contendo a UF, a Operadora e a quantidade de acessos do √∫ltimo m√™s dispon√≠vel, no caso agosto de 2018.
 
-Depois foi trabalhado os dados de acessos, obtidos em ([Portal Anatel) ](https://cloud.anatel.gov.br/index.php/s/TpaFAwSw7RPfBa8?path=%2FMovel_Pessoal). 
-Os dados foram filtrados e sumarizados para gerar o Data.Frame "Acessos", contendo a UF, a Operadora e a quantidade de acessos do ˙ltimo mÍs disponÌvel, no caso agosto de 2018.
+## M√©todo (continua√ß√£o)
+Por conseguinte, os Data.Frame Antenas e Acessos foram unidos e deram origem ao Data.Frame SMP, contendo os dados de UF, Operadora, Quantidade de Acessos e a Quantidade de antenas.
 
+Em adi√ß√£o, foi gerado manualmente o vetor Notas, com as notas extra√≠das do √∫ltimo relat√≥rio da pesquisa de satisfa√ß√£o.([Portal Anatel-Satisfa√ß√£o e Qualidade Percebida - 2017)](http://www.anatel.gov.br/consumidor/pesquisa-de-satisfacao-e-qualidade/2017). Esses dados est√£o dispon√≠veis apenas em forma de relat√≥rio no Portal da Ag√™ncia , assim n√£o foi poss√≠vel sua inser√ß√£o por meio importa√ß√£o do Dataset. Esse vetor foi inserido ao Data.Frame SMP.
 
-## MÈtodo (continuaÁ„o)
-Por conseguinte, os Data.Frame foram unidos e deram origem ao Data.Frame SMP, contendo os dados de UF, Operadora, Quantidade de Acessos e a Quantidade de antenas.
+Para a apresenta√ß√£o gr√°fica o n√∫mero de antenas foi comparado previamente ao n√∫mero de clientes de cada operadora por estado da Federa√ß√£o. Assim, foi obtido a quantidade m√©dia de usu√°rios por antena.
 
-Em seguida foi gerado manualmente o vetor Notas, com as notas extraÌdas do ˙ltimo relatÛrio da pesquisa de satisfaÁ„o.([Portal Anatel) ](http://www.anatel.gov.br/consumidor/pesquisa-de-satisfacao-e-qualidade/2017) Esses dados est„o disponÌveis apenas em forma de relatÛrio no Portal da AgÍncia , assim n„o foi possÌvel sua inserÁ„o por meio importaÁ„o do Dataset. Esse vetor foi inserido ao Data.Frame SMP.
+## M√©todo (continua√ß√£o)
 
-## MÈtodo (continuaÁ„o)
+No segundo segmento foi criado o Data.Frame SMP_POP, que foi originado a partir do Data.Frame SMP sumarizado por UF. Nele foi acrescentado manualmente um vetor com a Popula√ß√£o dos Estados brasileiros retirados do √∫ltimo senso do IBGE ao Data.Frame SMP. Em seguida foi acrescida uma coluna com a propor√ß√£o de linhas de celular por habitantes.
 
-No segundo segmento foi acrescentado manualmente um vetor com a PopulaÁ„o dos Estados brasileiros retirados do ˙ltimo senso do IBGE ao Data.Frame SMP, no qual foi chamado de SPM_POP. Em seguida ele foi sumarizado para que as informaÁıes fossem apresentadas por Estado, alem de ser incluÌdas novas colunas com a proporÁ„o de linhas de celular por habitantes.
-
-Para apresentaÁ„o gr·fica, o SMP_POP foi divido por Regi„o (Norte, Nordeste, Centro-Oeste, SUl e Sudeste) para melhor representar a proporÁ„o. Assim, foram criados 5 novos Data.Frame com os dados sumarizados pelas respectivas Regiıes, contendo a quantidade de linhas, de habitantes e a proporÁ„o da Regi„o. 
+Para apresenta√ß√£o gr√°fica, o SMP_POP foi divido por Regi√£o (Norte, Nordeste, Centro-Oeste, SUl e Sudeste) para melhor representar a propor√ß√£o. Assim, foram criados 5 novos Data.Frame com os dados sumarizados pelas respectivas Regi√µes, contendo a quantidade de linhas, de habitantes e a propor√ß√£o da Regi√£o. 
 
 
 
@@ -77,10 +77,10 @@ AC <- AC.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   
   group_by(UF, Operadora)%>%
@@ -92,10 +92,10 @@ AL <- AL.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   
   group_by(UF, Operadora)%>%
@@ -107,10 +107,10 @@ AM <- AM.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   
   group_by(UF, Operadora)%>%
@@ -124,10 +124,10 @@ AP <- AP.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   
   group_by(UF, Operadora)%>%
@@ -138,10 +138,10 @@ BA <- BA.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   
   group_by(UF, Operadora)%>%
@@ -152,10 +152,10 @@ CE <- CE.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   
   group_by(UF, Operadora)%>%
@@ -167,10 +167,10 @@ DF <- DF.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   
   select(UF, Operadora) %>% 
   
@@ -182,10 +182,10 @@ ES <- ES.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   
   select(UF, Operadora) %>% 
   
@@ -197,10 +197,10 @@ GO <- GO.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -211,10 +211,10 @@ MA <- MA.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -224,10 +224,10 @@ MG <- MG.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -237,10 +237,10 @@ MS <- MS.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -251,10 +251,10 @@ MT <- MT.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -264,10 +264,10 @@ PA <- PA.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -279,10 +279,10 @@ PB <- PB.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -292,10 +292,10 @@ PE <- PE.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -307,10 +307,10 @@ PI <- PI.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -321,10 +321,10 @@ PR <- PR.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -334,10 +334,10 @@ RJ <- RJ.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -347,10 +347,10 @@ RN <- RN.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -361,10 +361,10 @@ RO <- RO.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -375,10 +375,10 @@ RR <- RR.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
   group_by(UF, Operadora)%>%
   count(UF)
@@ -388,10 +388,10 @@ RS <- RS.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%   
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%   
   select(UF, Operadora) %>% 
   group_by(UF, Operadora)%>%
   count(UF)
@@ -401,10 +401,10 @@ SC <- SC.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -415,10 +415,10 @@ SE <- SE.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -428,10 +428,10 @@ SP <- SP.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -443,10 +443,10 @@ TO <- TO.csv_licenciamento%>%
   
   rename(Operadora=NomeEntidade) %>%
   rename(UF=SiglaUf) %>% 
-  mutate(Operadora = (str_replace(Operadora,"OI M”VEL S.A.", "OI")))  %>% 
+  mutate(Operadora = (str_replace(Operadora,"OI M√ìVEL S.A.", "OI")))  %>% 
   mutate(Operadora = (str_replace(Operadora,"TIM CELULAR S.A.", "TIM"))) %>%
   mutate(Operadora = (str_replace(Operadora,"CLARO S.A.", "CLARO"))) %>% 
-  mutate(Operadora = (str_replace(Operadora,"TELEF‘NICA BRASIL S.A.", "VIVO"))) %>%
+  mutate(Operadora = (str_replace(Operadora,"TELEF√îNICA BRASIL S.A.", "VIVO"))) %>%
   select(UF, Operadora) %>% 
 group_by(UF, Operadora)%>%
   count(UF)
@@ -494,8 +494,8 @@ full_join(TO) %>%
   
   Acessos <- Acessos_SMP_2015.2018_._Total %>%
     select(-Empresa, -CNPJ, -DDD, -CNPJ, -Tecnologia, -Tipo) %>% 
-    filter(Grupo=="OI"| Grupo=="TELECOM AMERICAS"| Grupo=="TELEF‘NICA"| Grupo=="GVT"| Grupo=="TELECOM ITALIA" | Grupo=="TELMEX (CLARO/EMBRATEL/NET)" | Grupo=="TELECOM ITALIA (TIM)") %>% 
-        mutate(Operadora = (str_replace(Grupo,"TELEF‘NICA", "VIVO"))) %>% 
+    filter(Grupo=="OI"| Grupo=="TELECOM AMERICAS"| Grupo=="TELEF√îNICA"| Grupo=="GVT"| Grupo=="TELECOM ITALIA" | Grupo=="TELMEX (CLARO/EMBRATEL/NET)" | Grupo=="TELECOM ITALIA (TIM)") %>% 
+        mutate(Operadora = (str_replace(Grupo,"TELEF√îNICA", "VIVO"))) %>% 
         mutate(Operadora = (str_replace(Operadora,"TELECOM AMERICAS", "CLARO"))) %>% 
            mutate(Operadora =(str_replace(Operadora,"TELECOM ITALIA", "TIM"))) %>% 
     mutate(Operadora =(str_replace(Operadora,"GVT", "VIVO"))) %>%
@@ -567,9 +567,9 @@ Regiao <- Norte %>%
 
 ```
 
-## Gr·ficos1 
+## Gr√°ficos1 
 ```{r pressure1}
-#Gr·fico 1: Mapa de notas das Operadoras por Estado
+#Gr√°fico 1: Mapa de notas das Operadoras por Estado
 
 SMP%>% 
   ggplot(aes(Operadora,UF)) + 
@@ -577,69 +577,67 @@ SMP%>%
 
 ```
 
-## Gr·ficos2 
+## Gr√°ficos2 
 ```{r pressure2}
-#Gr·fico 2: Nota mÈdia obtida pelas Operadoras por Estado
+#Gr√°fico 2: Nota m√©dia obtida pelas Operadoras por Estado
 SMP %>% 
   group_by(UF) %>% 
   summarise(Nota_media=mean(Notas)) %>% 
   ggplot(aes(x=UF, y=Nota_media, fill=Nota_media) 
   )+geom_bar(stat = "identity", alpha=0.6)+
-  labs(title = "Nota mÈdia de todas as operadoras por Estado ", x ="UF", y ="Nota MÈdia")  
+  labs(title = "Nota m√©dia de todas as operadoras por Estado ", x ="UF", y ="Nota M√©dia")  
 ```
 
-## Gr·ficos3 
+## Gr√°ficos3 
 ```{r pressure3}
-#Gr·fico 3: Dispers„o da relaÁ„o entre a vari·vel Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade. 
-
-#OBS: Teoricamente quanto mais antenas uma operadora tem, melhor ser· o seu sinal e a disponibilidade do serviÁo. No entanto, h· de verificar tambÈm a quantidade de usu·rios que utilizam a infraestrutura. Desse modo, o n˙mero de antenas foi comparado previamente ao n˙mero de clientes de cada operadora por estado da FederaÁ„o. Assim, foi obtido a quantidade mÈdia de usu·rios por antena.
+#Gr√°fico 3: Dispers√£o da rela√ß√£o entre a vari√°vel Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade. 
 
         SMP%>% 
     ggplot(aes(x= Notas, y=(Linhas/Antenas), color=UF)) + 
-  geom_point() + labs(title = "Dispers„o da relaÁ„o entre a quantidade de antenas por usu·rios e a Nota ", x ="notas", y ="N˙mero mÈdio de antenas por usu·rios")
+  geom_point() + labs(title = "Dispers√£o da rela√ß√£o entre a quantidade de antenas por usu√°rios e a Nota ", x ="notas", y ="N√∫mero m√©dio de antenas por usu√°rios")
  
 ``` 
 
-## Gr·ficos4
+## Gr√°ficos4
 ```{r pressure4} 
 
         SMP%>% 
           ggplot(aes(x= Notas, y=(Linhas/Antenas), color=Operadora))+
-          geom_point()+stat_smooth(method = "lm") +labs(title = "Regress„o Linear da relaÁ„o entre n˙mero de antenas por usu·rios e as Notas", x ="Notas", y ="N˙mero mÈdio de antenas por usu·rios")
+          geom_point()+stat_smooth(method = "lm") +labs(title = "Regress√£o Linear da rela√ß√£o entre n√∫mero de antenas por usu√°rios e as Notas", x ="Notas", y ="N√∫mero m√©dio de antenas por usu√°rios")
         
 ```  
 
-## Gr·ficos5
+## Gr√°ficos5
 ```{r pressure5} 
 
 
-        #Gr·fico 4: ProporÁ„o de linhas de celular por habitantes
+        #Gr√°fico 5: Propor√ß√£o de linhas de celular por habitantes
  Regiao%>% 
           ggplot(aes(x=Linhas/100 , y=Habitantes/100, color=Regiao, size=Proporcao)) + 
           geom_point() +
-  labs(title = "ProporÁ„o de linhas de celular por habitantes ", x ="Quantidade de Linhas habilitadas", y ="PopulaÁ„o Brasileira/100")
+  labs(title = "Propor√ß√£o de linhas de celular por habitantes ", x ="Quantidade de Linhas habilitadas", y ="Popula√ß√£o Brasileira/100")
 ```
 
-## Conclus„o
+## Conclus√£o
 
-A primeira an·lise buscou visualizar como as notas de cada Operadora estavam distribuÌdas nos Estados. … possÌvel perceber por meio do gr·fico 1 que a OI mostra um n˙mero mais acentuado de avaliaÁıes baixas. Enquanto a Vivo apresenta ser a melhor avaliada no quesito funcionamento do serviÁo de celular.
+1. Gr√°fico 1: Mapa de notas das Operadoras por Estado - A primeira an√°lise buscou visualizar como as notas de cada Operadora estavam distribu√≠das nos Estados. Pelo mapa das cores √© poss√≠vel perceber que a OI mostra um n√∫mero mais acentuado de avalia√ß√µes baixas. Enquanto a Vivo aparenta ser a melhor avaliada no quesito funcionamento do servi√ßo de celular.
 
-No gr·fico 2 foi feita um extraÁ„o da mÈdia das notas de todas as Operadoras por Estado. Por conseguinte, o Estado de Minas Gerais apresentou as menores mÈdias de notas, o que denota que a percepÁ„o dos usu·rios quanto ao funcionamento do serviÁo de celular n„o est· boa, comparada aos demais Estados da FederaÁ„o. Em contrapartida, os usu·rios do Espirito Santos parecem estar bem satisfeitos com o Funcionamento do SMP no Estado, uma vez que foi o Estado onde as Operadoras tiveram a maior mÈdia geral na avaliaÁ„o.
+2. Nota m√©dia obtida pelas Operadoras por Estado- Na segunda an√°lise foi feita um extra√ß√£o da m√©dia das notas de todas as Operadoras por Estado. Por conseguinte, o Estado de Minas Gerais apresentou as menores m√©dias de notas, o que denota que a percep√ß√£o dos usu√°rios quanto ao funcionamento do servi√ßo de celular n√£o est√° boa, comparada aos demais Estados da Federa√ß√£o. Em contrapartida, os usu√°rios do Espirito Santos demostraram estar satisfeitos com o Funcionamento do SMP no Estado, uma vez que foi o Estado onde as Operadoras tiveram a maior m√©dia geral na avalia√ß√£o.
 
-## Conclus„o(continuaÁ„o)
-A segunda an·lise buscou estudar se a nota obtida pela operadora tinha relaÁ„o com a sua infraestrutura. Conforme verifica-se no gr·fico 3 a dispers„o obtida n„o permite afirmar haver uma correlaÁ„o positiva entre essas duas vari·veis.
+## Conclus√£o(continua√ß√£o)
+3. Gr√°fico:Dispers√£o da rela√ß√£o entre a vari√°vel Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade - Nessa an√°lise buscou se estudar se a nota obtida pela operadora tinha rela√ß√£o com a sua infraestrutura. Conforme verifica-se no gr√°fico 3 a dispers√£o obtida n√£o permite afirmar haver uma correla√ß√£o positiva entre essas duas vari√°veis.
 
-No gr·fico 4 foi inserida uma linha de regress„o linear para cada Operadora. O resultado visualizado no gr·fico mostra uma correlaÁ„o negativa entre as Quantidade mÈdia de usu·rios por antenas e as Notas obtidas.
-O resultado evidenciou n„o haver relaÁ„o direta entre a infraestrutura da operadora e a percepÁ„o que seu usu·rio tem do seu serviÁo, considerando apenas esse aspecto da quantidade de antenas.
+4. Gr√°fico 4: Regress√£o Linear da rela√ß√£o entre n√∫mero de antenas por usu√°rios e as Notas - Nesse gr√°fico foi inserida uma linha de regress√£o linear para cada Operadora. O resultado visualizado no gr√°fico mostra uma correla√ß√£o negativa entre a quantidade m√©dia de usu√°rios por antenas e as Notas obtidas.
+O resultado evidenciou n√£o haver rela√ß√£o positiva direta entre a infraestrutura da operadora e a percep√ß√£o que seu usu√°rio tem do seu servi√ßo, considerando apenas esse aspecto da quantidade de antenas.
 
-## Conclus„o(continuaÁ„o)
-Ao contr·rio, o c·lculo da correlaÁ„o mostrou haver uma relaÁ„o negativa pequena, que denota que as operadoras com mais usu·rios por antenas obtiveram melhor pontuaÁ„o.
+## Conclus√£o(continua√ß√£o)
+Ao contr√°rio, o c√°lculo da correla√ß√£o mostrou haver uma rela√ß√£o negativa pequena, que denota que as operadoras com mais usu√°rios por antenas obtiveram melhor pontua√ß√£o.
 
-Isso pode significar que essas operadoras com mais usu·rios por antenas oferecem um melhor serviÁo (e por isso tem mais clientes), quando se considera outros aspectos como o preÁo, atendimento, promoÁıes, etc., e por isso tem mais clientes por antenas e s„o mais bem avaliadas.
+Isso pode significar que essas operadoras com mais usu√°rios por antenas oferecem um melhor servi√ßo, quando se considera outros aspectos como o pre√ßo, atendimento, promo√ß√µes, etc., e por isso tem mais clientes por antenas e s√£o mais bem avaliadas.
 
-## Conclus„o(continuaÁ„o)
+## Conclus√£o(continua√ß√£o)
 
-Na segunda parte do estudo foi analisada a proporÁ„o de celular por habitante. Por meio do Gr·fico 5, percebe-se claramente uma correlaÁ„o quase perfeita entre a PopulaÁ„o e quantidade de linhas, isso de certa forma È um resultado esperado. No entanto, o Regi„o que apresenta a maior proporÁ„o de celular por habitantes È a Centro-Oeste, mesmo tendo a segunda menor populaÁ„o entre as regiıes. Enquanto a regi„o Norte tema menor proporÁ„o de linhas por habitantes. 
+5. Gr√°fico 5:Propor√ß√£o de linhas de celular por habitantes - Na segunda parte do estudo foi analisada a propor√ß√£o de celular por habitante. Por meio do Gr√°fico 5 √© possivel  observar a correla√ß√£o quase perfeita entre a Popula√ß√£o e quantidade de linhas. Quanto √† propor√ß√£o, a que Regi√£o que apresenta a maior propor√ß√£o de celular por habitantes √© a Centro-Oeste, mesmo tendo a segunda menor popula√ß√£o entre as regi√µes. Enquanto a regi√£o Norte tema menor propor√ß√£o de linhas por habitantes e a menor popula√ß√£o.  
   
 
 
