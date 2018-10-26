@@ -1,0 +1,4 @@
+"0","#Gráfico 1: Mapa de notas das Operadoras por Estado"
+"0","SMP%>% "
+"0","  ggplot(aes(Operadora,UF)) + "
+"0","  geom_tile(aes(fill=Notas)) + ggtitle(""Mapa de notas das Operadoras por Estado"")"

@@ -1,0 +1,3 @@
+"0","        SMP%>% "
+"0","          ggplot(aes(x= Notas, y=(Linhas/Antenas), color=Operadora))+"
+"0","          geom_point()+stat_smooth(method = ""lm"") +labs(title = ""Regressão Linear da relação entre número de antenas por usuários e as Notas"", x =""Notas"", y =""Número médio de antenas por usuários"")"

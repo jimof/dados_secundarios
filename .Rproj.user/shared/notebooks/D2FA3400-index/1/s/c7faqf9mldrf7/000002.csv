@@ -1,0 +1,7 @@
+"0","#Gráfico 2: Nota média obtida pelas Operadoras por Estado"
+"0","SMP %>% "
+"0","  group_by(UF) %>% "
+"0","  summarise(Nota_media=mean(Notas)) %>% "
+"0","  ggplot(aes(x=UF, y=Nota_media, fill=Nota_media) "
+"0","  )+geom_bar(stat = ""identity"", alpha=0.6)+"
+"0","  labs(title = ""Nota média de todas as operadoras por Estado "", x =""UF"", y =""Nota Média"")  "

@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1540523119354.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F22EBF9B",
+    "lastKnownWriteTime" : 1540523019,
+    "last_content_update" : 1540523019,
+    "path" : "~/planilha R/dados_secundarios/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "34,380",
+        "docOutlineVisible" : "0",
+        "last_setup_crc32" : "862FA62Dc4e2d899",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

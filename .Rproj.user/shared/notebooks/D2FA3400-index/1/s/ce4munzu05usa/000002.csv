@@ -1,0 +1,5 @@
+"0","        #Gráfico 5: Proporção de linhas de celular por habitantes"
+"0"," Regiao%>% "
+"0","          ggplot(aes(x=Linhas/100 , y=Habitantes/100, color=Regiao, size=Proporcao)) + "
+"0","          geom_point() +"
+"0","  labs(title = ""Proporção de linhas de celular por habitantes "", x =""Quantidade de Linhas habilitadas"", y =""População Brasileira/100"")"

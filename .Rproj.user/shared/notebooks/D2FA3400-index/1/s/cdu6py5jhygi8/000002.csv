@@ -1,0 +1,4 @@
+"0","#Gráfico 3: Dispersão da relação entre a variável Quantidade de antenas por assinante e a Nota recebida na pesquisa de qualidade. "
+"0","        SMP%>% "
+"0","    ggplot(aes(x= Notas, y=(Linhas/Antenas), color=UF)) + "
+"0","  geom_point() + labs(title = ""Dispersão da relação entre a quantidade de antenas por usuários e a Nota "", x =""notas"", y =""Número médio de antenas por usuários"")"
